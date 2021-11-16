@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+    width: 100%;
+}
+
+header a {
+    font-size: 30px;
+}
+
+section {
+    height: 100vh;
+}
+
+.keep-in-touch {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+    background-image: url(assets/CarouselBg.dbf18b2b.jpg);
+    gap: 30px;
+}
+
+.keep-in-touch h1 {
+    font-size: 40px;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+}
+
+.keep-in-touch > div {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start; 
+    width: 50%;
+}
+
+.contact-right {
+    background-color: rgba(246,185,0,.2);
+    padding-block: 50px;  
+}
+
+.send-a-message {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 80%;
+    padding: 20px;
+}
+
+.send-a-message p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    justify-content: center;
+
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+textarea {
+    height: 70px;
+}
+
+
+form button {
+    height: 50px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+}
+
+@media screen and (min-width:750px) {
+    section {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .send-a-message {
+        width: 100%;
+    }
+
+    .keep-in-touch {
+        width: 50%;
+    }
+
+    .contact-right {
+        width: 50%;
+        padding: 100px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
